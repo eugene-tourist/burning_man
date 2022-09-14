@@ -1,0 +1,192 @@
+
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*-------------------------------------------------*/
+.container {
+	width: 1170px;
+	margin: 0 auto;
+}
+.wrapper{
+	display: flex;
+	flex-direction: column;
+}
+/* ---------------HEADER------------------------- */
+.header {
+	background: url(../img/header-bg.jpg) no-repeat center top / cover;
+	flex: 1 1 auto;
+}
+
+.nav {
+	display: flex;
+	padding-top: 57px;
+	align-items: center;
+}
+
+.logo {
+	margin-right: 70px;
+}
+
+.menu {
+	display: flex;
+}
+.menu li a{
+	margin-right: 40px;
+	color: #FFFFFF;
+	font-family: 'Anton';
+	font-size: 14px;
+	line-height: 21px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+
+.tel{
+	margin-left:auto;
+	color: #FFFFFF;
+	font-family: 'Anton';
+	font-size: 17px;
+	line-height: 26px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+}
+/* --------------------INFO----------------------- */
+.info {
+	padding: 321px 0 322px 0;
+}
+
+.subtitle {
+	font-family: 'Anton';
+	font-size: 30px;
+	line-height: 45px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+.title {
+	font-family: 'Anton';
+	font-size: 100px;
+	line-height: 151px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+.btn {
+	display: block;
+	width: 238px;
+	height: 57px;
+	border: 1px solid #FFFFFF;
+	font-family: 'Anton';
+	font-size: 17px;
+	line-height: 26px;
+	text-align: center;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	padding: 18px 23px;
+}
+/* ----------------SECTION---------------------- */
+.about {
+	margin: 114px 0;
+}
+
+.about-title {
+	font-family: 'Anton';
+	font-size: 50px;
+	line-height: 75px;
+	text-transform: uppercase;
+	color: #000000;
+	margin-bottom: 58px;
+}
+
+.about-row {
+	display: flex;
+	margin-bottom: 67px;
+}
+
+.row-item {
+	width: 600px;
+}
+
+.item:not(:last-child){
+	margin-right: 36px;
+}
+
+.item-title {
+	font-family: 'Anton';
+	font-size: 25px;
+	line-height: 38px;
+	text-transform: uppercase;
+	color: #000000;
+	margin-bottom: 19px;
+}
+
+.item-text {
+	font-family: 'Open Sans';
+	font-size: 16px;
+	line-height: 26px;
+	text-align: justify;
+	color: #000000;
+}
+
+.images img:not(:last-child){
+	margin-right: 26px;
+}
+/* ----------------FOOTER------------------------ */
+.footer {
+	margin-top: 114px;
+}
+
+.flex {
+	display: flex;
+	padding-bottom: 80px;
+}
+
+.years {
+	margin-right: 55px;
+	font-family: 'Open Sans';
+	font-size: 15px;
+	line-height: 20px;
+	color: #000000;
+}
+
+.author {
+	font-family: 'Open Sans';
+	font-size: 15px;
+	line-height: 20px;
+	color: #000000;
+}
